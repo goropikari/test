@@ -1,0 +1,11 @@
+
+{
+	"name": "Go & MySQL",
+	"dockerComposeFile": ["docker-compose.yml", "docker-compose.override.yml"],
+	"service": "app",
+	"workspaceFolder": "/workspaces/devc",
+    "mounts": [
+        "source=${localWorkspaceFolder}/src,target=${containerWorkspaceFolder},type=bind,consistency=cached"
+    ],
+	"remoteUser": "vscode"
+}
